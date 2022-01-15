@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">
+            <![CDATA[jdbc:firebirdsql://178.69.191.239:3050/d:/old.fdb?charSet=utf-8&roleName=yourRole]]></property>
+        <property name="connection.driver_class">org.firebirdsql.jdbc.FBDriver</property>
+        <property name="connection.username">SYSDBA</property>
+        <property name="connection.password">masterkey</property>
+
+        <mapping class="Model.Entities.ArtIbSEntity"/>
+
+        <mapping class="Model.Entities.ArtImgEntity"/>
+
+        <mapping class="Model.Entities.CustAccountEntity"/>
+
+        <mapping class="Model.Entities.CustKlientEntity"/>
+
+        <mapping class="Model.Entities.CustUserEntity"/>
+
+        <mapping class="Model.Entities.InterfMainmenuEntity"/>
+
+        <mapping class="Model.Entities.ProgramModuleEntity"/>
+
+        <mapping class="Model.Entities.RemDremontEntity"/>
+
+        <mapping class="Model.Entities.RemDremonttEntity"/>
+
+        <mapping class="Model.Entities.RemGalldocEntity"/>
+
+        <mapping class="Model.Entities.RemSsostEntity"/>
+
+        <mapping class="Model.Entities.RemStremontEntity"/>
+
+        <mapping class="Model.Entities.RemZEntity"/>
+
+        <mapping class="Model.Entities.SetupEntity"/>
+
+        <mapping class="Model.Entities.SklientEntity"/>
+
+        <mapping class="Model.Entities.SnomEntity"/>
+
+        <mapping class="Model.Entities.SskladEntity"/>
+
+
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

@@ -5,10 +5,10 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.url">
-            <![CDATA[jdbc:firebirdsql://178.69.191.239:3050/d:/old.fdb?charSet=utf-8&roleName=yourRole]]></property>
-        <property name="connection.driver_class">org.firebirdsql.jdbc.FBDriver</property>
-        <property name="connection.username">SYSDBA</property>
-        <property name="connection.password">masterkey</property>
+            <![CDATA[jdbc:postgresql://localhost:5432/testObmen?charSet=utf-8&roleName=yourRole]]></property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">123456</property>
 
         <mapping class="Model.Entities.ArtIbSEntity"/>
 
